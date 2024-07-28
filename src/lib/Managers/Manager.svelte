@@ -6,7 +6,7 @@
 	import TransactionsPage from '../Transactions/TransactionsPage.svelte';
     import { goto } from '$app/navigation';
     import ManagerFantasyInfo from './ManagerFantasyInfo.svelte';
-    import ManagerAwards from './ManagerAwards.svelte';
+    // import ManagerAwards from './ManagerAwards.svelte';
     import { onMount } from 'svelte';
 	import { getDatesActive, getRosterIDFromManagerID, getTeamNameFromTeamManagers } from '$lib/utils/helperFunctions/universalFunctions';
 
@@ -303,7 +303,7 @@
         <ManagerFantasyInfo {viewManager} {players} {changeManager} />
     {/if}
 
-    <ManagerAwards {leagueTeamManagers} tookOver={viewManager.tookOver} {awards} {records} {rosterID} managerID={viewManager.managerID} />
+    <!-- <ManagerAwards {leagueTeamManagers} tookOver={viewManager.tookOver} {awards} {records} {rosterID} managerID={viewManager.managerID} /> >
 
     {#if loading}
         <!-- promise is pending -->
