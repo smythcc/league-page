@@ -303,7 +303,7 @@
         <ManagerFantasyInfo {viewManager} {players} {changeManager} />
     {/if}
 
-    <!-- <ManagerAwards {leagueTeamManagers} tookOver={viewManager.tookOver} {awards} {records} {rosterID} managerID={viewManager.managerID} /> >
+    <!-- <ManagerAwards {leagueTeamManagers} tookOver={viewManager.tookOver} {awards} {records} {rosterID} managerID={viewManager.managerID} /> -->
 
     {#if loading}
         <!-- promise is pending -->
